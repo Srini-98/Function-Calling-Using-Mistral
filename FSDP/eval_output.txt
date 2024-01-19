@@ -1,0 +1,276 @@
+Original: getIndicatorForIPv4(apiKey = 'myApiKey', ip = '192.168.1.1', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "myApiKey", "ip": "192.168.1.1", "section": "general"}'} 
+-------------------
+Original: getIndicatorForIPv4(apiKey = 'xyz789', ip = '10.0.0.1', section = 'reputation')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "xyz789", "ip": "10.0.0.1", "section": "reputation"}'} 
+-------------------
+Original: getIndicatorForIPv4(apiKey = '123abc', ip = '8.8.8.8', section = 'geo')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "123abc", "ip": "8.8.8.8", "section": "geo"}'} 
+-------------------
+Original: getIndicatorForIPv4(apiKey = 'key123', ip = '172.16.0.2', section = 'malware')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "key123", "ip": "172.16.0.2", "section": "malware"}'} 
+-------------------
+Original: getIndicatorForIPv4(apiKey = 'apiKey456', ip = '8.8.4.4', section = 'urlList')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "apiKey456", "url": "8.8.4.4", "section": "urlList"}'} 
+-------------------
+Original: getIndicatorForIPv4(apiKey = 'key789', ip = '192.168.0.1', section = 'passiveDns')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "key789", "ip": "192.168.0.1", "section": "passiveDns"}'} 
+-------------------
+Original: getIndicatorForIPv4(apiKey = 'api123Key', ip = '172.24.1.1', section = 'urlList')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "api123Key", "url": "172.24.1.1", "section": "urlList"}'} 
+-------------------
+Original: getIndicatorForIPv4(apiKey = '987xyz', ip = '10.10.10.10', section = 'geo')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "987xyz", "ip": "10.10.10.10", "section": "geo"}'} 
+-------------------
+Original: getIndicatorForIPv4(apiKey = 'abcKey123', ip = '8.8.4.4', section = 'malware')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "abcKey123", "ip": "8.8.4.4", "section": "malware"}'} 
+-------------------
+Original: getIndicatorForIPv4(apiKey = 'key654', ip = '192.168.1.100', section = 'reputation')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "key654", "ip": "192.168.1.100", "section": "reputation"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = 'xyz789', ip = '2001:0db8:85a3:0000:0000:8a2e:0370:7334', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv6", "arguments": '{"apiKey": "xyz789", "ip": "2001:0db8:85a3:0000:0000:8a2e:0370:7334", "section": "general"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = '123abc', ip = '2001:db8:1234:5678:9abc:def0:1234:5678', section = 'reputation')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv6", "arguments": '{"apiKey": "123abc", "ip": "2001:db8:1234:5678:9abc:def0:1234:5678", "section": "reputation"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = 'key456', ip = '2001:0db8:ac10:fe01:0000:0000:0000:0000', section = 'geo')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "key456", "ip": "2001:0db8:ac10:fe01:0000:0000:0000:0000", "section": "geo"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = 'apikey123', ip = '2001:0db8:85a3:0000:0000:8a2e:0370:7334', section = 'malware')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv6", "arguments": '{"apiKey": "apikey123", "ip": "2001:0db8:85a3:0000:0000:8a2e:0370:7334", "section": "malware"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = '789xyz', ip = '2001:db8:cafe::3', section = 'passiveDns')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv6", "arguments": '{"apiKey": "789xyz", "ip": "2001:db8:cafe::3", "section": "passiveDns"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = '987def', ip = '2001:0db8:1234:5678:9abc:def0:1234:5678', section = 'malware')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv6", "arguments": '{"apiKey": "987def", "ip": "2001:0db8:1234:5678:9abc:def0:1234:5678", "section": "malware"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = '456ghi', ip = '2001:0db8:85a3:0000:0000:8a2e:0370:7334', section = 'geo')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv6", "arguments": '{"apiKey": "456ghi", "ip": "2001:0db8:85a3:0000:0000:8a2e:0370:7334", "section": "geo"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = '321jkl', ip = '2001:db8:cafe::3', section = 'urlList')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIpv6", "arguments": '{"apiKey": "321jkl", "ip": "2001:db8:cafe::3", "section": "urlList"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = '654mno', ip = '2001:db8:1234:5678:9abc:def0:1234:5678', section = 'reputation')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "654mno", "ip": "2001:db8:1234:5678:9abc:def0:1234:5678", "section": "reputation"}'} 
+-------------------
+Original: getIndicatorForIPv6(apiKey = '890pqr', ip = '2001:0db8:ac10:fe01:0000:0000:0000:0000', section = 'passiveDns')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv6", "arguments": '{"apiKey": "890pqr", "ip": "2001:0db8:ac10:fe01:0000:0000:0000:0000", "section": "passiveDns"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='xyz123', domain='example.com', section='general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "xyz123", "domain": "example.com", "section": "general"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='abc123', domain='mywebsite.net', section='geo')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForIPv4", "arguments": '{"apiKey": "abc123", "ip": "mywebsite.net", "section": "geo"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='123abc', domain='suspiciousdomain.org', section='malware')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "123abc", "domain": "suspiciousdomain.org", "section": "malware"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='key789', domain='testsite.com', section='urlList')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "key789", "url": "testsite.com", "section": "urlList"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='789xyz', domain='newsite.net', section='whois')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "789xyz", "domain": "newsite.net", "section": "whois"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='key12345', domain='domain123.com', section='passiveDns')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "key12345", "domain": "domain123.com", "section": "passiveDns"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='exampleKey678', domain='siteexample.org', section='whois')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "exampleKey678", "domain": "siteexample.org", "section": "whois"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='net789Key', domain='checkdomain.net', section='malware')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "net789Key", "domain": "checkdomain.net", "section": "malware"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='globalKey123', domain='globaldomain.com', section='geo')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "globalKey123", "domain": "globaldomain.com", "section": "geo"}'} 
+-------------------
+Original: getIndicatorForDomain(apiKey='dataKey456', domain='websitedata.org', section='urlList')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "dataKey456", "url": "websitedata.org", "section": "urlList"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = 'myAPIKey123', hostname = 'example.com', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForHostname", "arguments": '{"apiKey": "myAPIKey123", "hostname": "example.com", "section": "general"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = 'apiKey987', hostname = 'bad-site.net', section = 'geo')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "apiKey987", "domain": "bad-site.net", "section": "geo"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = '123KeyAPI', hostname = 'suspicious.org', section = 'malware')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForMalware", "arguments": '{"apiKey": "123KeyAPI", "domain": "suspicious.org", "section": "malware"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = 'Key999Alien', hostname = 'dangerous-host.io', section = 'urlList')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "Key999Alien", "url": "dangerous-host.io", "section": "urlList"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = 'AlienKey321', hostname = 'secure-server.com', section = 'passiveDns')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "AlienKey321", "domain": "secure-server.com", "section": "passiveDns"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = 'KeyABC123', hostname = 'mysterydomain.com', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "KeyABC123", "domain": "mysterydomain.com", "section": "general"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = 'TravelKey789', hostname = 'travelblog.net', section = 'geo')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "TravelKey789", "domain": "travelblog.net", "section": "geo"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = 'UpdateKey456', hostname = 'techupdate.io', section = 'malware')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForMalware", "arguments": '{"apiKey": "UpdateKey456", "url": "techupdate.io", "section": "malware"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = 'NewsKey321', hostname = 'newsportal.com', section = 'urlList')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "NewsKey321", "url": "newsportal.com", "section": "urlList"}'} 
+-------------------
+Original: getIndicatorForHostname(apiKey = 'DNSKey654', hostname = 'oldsite.org', section = 'passiveDns')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForDomain", "arguments": '{"apiKey": "DNSKey654", "domain": "oldsite.org", "section": "passiveDns"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'xyz789', fileHash = '12345abcde67890fghij', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "xyz789", "fileHash": "12345abcde67890fghij", "section": "general"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'myKey123', fileHash = 'abcd1234efgh5678ijkl', section = 'analysis')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "myKey123", "fileHash": "abcd1234efgh5678ijkl", "section": "analysis"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'api_key_456', fileHash = '9f8e7d6c5b4a3s21f0e1', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "api_key_456", "fileHash": "9f8e7d6c5b4a3s21f0e1", "section": "general"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'superKey789', fileHash = '6f5e4d3c2b1a0987e6d5', section = 'analysis')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "superKey789", "fileHash": "6f5e4d3c2b1a0987e6d5", "section": "analysis"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'myAPIkey321', fileHash = '00112233445566778899', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "myAPIkey321", "fileHash": "00112233445566778899", "section": "general"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'key12345', fileHash = 'a1b2c3d4e5', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "key12345", "fileHash": "a1b2c3d4e5", "section": "general"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = '98765key', fileHash = 'f6g7h8i9j0', section = 'analysis')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "98765key", "fileHash": "f6g7h8i9j0", "section": "analysis"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'api123456', fileHash = '1a2b3c4d5e', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "api123456", "fileHash": "1a2b3c4d5e", "section": "general"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'key654321', fileHash = '5e4d3c2b1a', section = 'analysis')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "key654321", "fileHash": "5e4d3c2b1a", "section": "analysis"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'uniqueKey789', fileHash = '9f8e7d6c5b', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "uniqueKey789", "fileHash": "9f8e7d6c5b", "section": "general"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'xyz789', fileHash = '12345abcde67890fghij', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "xyz789", "fileHash": "12345abcde67890fghij", "section": "general"}'} 
+-------------------
+Original: getIndicatorForFileHashes(apiKey = 'myKey123', fileHash = 'abcd1234efgh5678ijkl', section = 'analysis')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForFileHashes", "arguments": '{"apiKey": "myKey123", "fileHash": "abcd1234efgh5678ijkl", "section": "analysis"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = 'abc123', url = 'http://example.com', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "abc123", "url": "http://example.com", "section": "urlList"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = 'xyz789', url = 'https://testsite.org', section = 'url_list')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "xyz789", "url": "https://testsite.org", "section": "url_list"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = '123abc', url = 'http://mywebsite.net', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "123abc", "url": "http://mywebsite.net", "section": "urlList"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = '789xyz', url = 'https://somesite.com', section = 'url_list')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "789xyz", "url": "https://somesite.com", "section": "url_list"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = 'key123', url = 'http://info-site.com', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "key123", "url": "http://info-site.com", "section": "general"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = 'key456', url = 'http://uniqueurl.com', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "key456", "url": "http://uniqueurl.com", "section": "geo"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = '987abc', url = 'https://examplepage.com', section = 'url_list')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "987abc", "url": "https://examplepage.com", "section": "url_list"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = '321xyz', url = 'http://sitequery.net', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "321xyz", "url": "http://sitequery.net", "section": "general"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = '654def', url = 'https://webcheck.org', section = 'url_list')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "654def", "url": "https://webcheck.org", "section": "url_list"}'} 
+-------------------
+Original: getIndicatorForUrl(apiKey = '789ghi', url = 'http://infoquery.com', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForUrl", "arguments": '{"apiKey": "789ghi", "url": "http://infoquery.com", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = 'xyz789', cve = 'CVE-2021-34527', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "xyz789", "cve": "CVE-2021-34527", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = '123abc', cve = 'CVE-2017-0144', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "123abc", "cve": "CVE-2017-0144", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = '456def', cve = 'CVE-2019-0708', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "456def", "cve": "CVE-2019-0708", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = '789ghi', cve = 'CVE-2018-8174', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "789ghi", "cve": "CVE-2018-8174", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = 'abc123', cve = 'CVE-2020-0601', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "abc123", "cve": "CVE-2020-0601", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = 'key123', cve = 'CVE-2015-1635', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "key123", "cve": "CVE-2015-1635", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = 'myKey456', cve = 'CVE-2022-21882', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "myKey456", "cve": "CVE-2022-21882", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = '789Key', cve = 'CVE-2016-10033', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "789Key", "cve": "CVE-2016-10033", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = 'api789xyz', cve = 'CVE-2020-1472', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "api789xyz", "cve": "CVE-2020-1472", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCVE(apiKey = 'keyABC123', cve = 'CVE-2018-12126', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCVE", "arguments": '{"apiKey": "keyABC123", "cve": "CVE-2018-12126", "section": "general"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'xyz789', nids = '123456', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "xyz789", "nids": "123456", "section": "general"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'abc123', nids = '654321', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "abc123", "nids": "654321", "section": "general"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'def456', nids = '987654', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "def456", "nids": "987654", "section": "General"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'ghi789', nids = '456789', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "ghi789", "nids": "456789", "section": "general"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'jkl012', nids = '321654', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "jkl012", "nids": "321654", "section": "general"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'key123', nids = '112233', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "key123", "nids": "112233", "section": "general"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'key456', nids = '334455', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "key456", "nids": "334455", "section": "general"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'key789', nids = '556677', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "key789", "nids": "556677", "section": "general"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'key101', nids = '778899', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "key101", "nids": "778899", "section": "general"}'} 
+-------------------
+Original: getIndicatorForNIDS(apiKey = 'key202', nids = '990011', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForNIDS", "arguments": '{"apiKey": "key202", "nids": "990011", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = 'xyz987', correlationRule = '1234567890abcdef', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "xyz987", "correlationRule": "1234567890abcdef", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = 'abc123', correlationRule = 'abcdef1234567890', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "abc123", "correlationRule": "abcdef1234567890", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = 'mykey999', correlationRule = 'fedcba0987654321', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "mykey999", "correlationRule": "fedcba0987654321", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = 'key123abc', correlationRule = '0011223344556677', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "key123abc", "correlationRule": "0011223344556677", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = 'superkey321', correlationRule = '7766554433221100', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "superkey321", "correlationRule": "7766554433221100", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = 'key789', correlationRule = 'abc123def456', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "key789", "correlationRule": "abc123def456", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = '987zyx', correlationRule = '654321fedcba', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "987zyx", "correlationRule": "654321fedcba", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = 'mySpecialKey123', correlationRule = '001122aabbcc', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "mySpecialKey123", "correlationRule": "001122aabbcc", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = 'keyABC123', correlationRule = 'ffeeddccbbaa', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "keyABC123", "correlationRule": "ffeeddccbbaa", "section": "general"}'} 
+-------------------
+Original: getIndicatorForCorrelationRules(apiKey = 'uniqueKey321', correlationRule = '12345abcde67890', section = 'general')
+Pred: ASSISTANT: <functioncall> {"name": "getIndicatorForCorrelationRules", "arguments": '{"apiKey": "uniqueKey321", "correlationRule": "12345abcde67890", "section": "general"}'} 
+-------------------

@@ -1,0 +1,233 @@
+SYSTEM: You are a helpful assistant with access to the following functions. Use them if required -
+{
+    "name": "getIndicatorForIPv4",
+    "description": "Retrieves comprehensive information for a specific IPv4 address from the AlienVault database. This function provides varied data types. 'general' section includes general information about the IP, geo data, and lists of other available sections. 'reputation' provides OTX data on observed malicious activity by AlienVault Labs. 'geo' details extensive geographic data such as country code and coordinates. 'malware' section shows malware samples associated with the IP, 'urlList' reveals URLs linked to the IP, and 'passiveDns' offers passive DNS information about hostnames/domains associated with the IP.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "apiKey": {
+                "type": "string",
+                "description": "Your AlienVault API key"
+            },
+            "ip": {
+                "type": "string",
+                "description": "IPv4 address to query"
+            },
+            "section":{
+                "type: "string",
+                "description" : "Specific data section to retrieve (options: general, reputation, geo, malware, urlList, passiveDns)"
+            }
+        },
+        "required": [
+            "apiKey",
+            "ip",
+            "section"
+        ]
+    }
+},
+{
+    "name": "getIndicatorForIPv6",
+    "description": "Retrieves comprehensive information for a specific IPv6 address from the AlienVault database. This function allows you to obtain various types of data. The 'general' section provides general information about the IP, including geo data, and a list of other available sections. 'reputation' offers OTX data on malicious activity observed by AlienVault Labs. 'geo' details more verbose geographic data such as country code and coordinates. 'malware' reveals malware samples connected to the IP, and 'urlList' shows URLs associated with the IP. Lastly, 'passiveDns' includes passive DNS information about hostnames/domains pointing to this IP.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "apiKey": {
+                "type": "string",
+                "description": "Your AlienVault API key"
+            },
+            "ip": {
+                "type": "string",
+                "description": "IPv6 address to query"
+            },
+            "section":{
+                "type: "string",
+                "description" : "Specific data section to retrieve (options: general, reputation, geo, malware, urlList, passiveDns)"
+            }
+        },
+        "required": [
+            "apiKey",
+            "ip",
+            "section"
+        ]
+    }
+},
+{
+    "name": "getIndicatorForDomain",
+    "description": "Retrieves a comprehensive overview for a given domain name from the AlienVault database. This function provides various data types about the domain. The 'general' section includes general information about the domain, such as geo data, and lists of other available sections. 'geo' provides detailed geographic data including country code and coordinates. The 'malware' section indicates malware samples associated with the domain. 'urlList' shows URLs linked to the domain, 'passiveDns' details passive DNS information about hostnames/domains associated with the domain, and 'whois' gives Whois records for the domain.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "apiKey": {
+                "type": "string",
+                "description": "Your AlienVault API key"
+            },
+            "domain": {
+                "type": "string",
+                "description": "Domain address to query"
+            },
+            "section":{
+                "type: "string",
+                "description" : "Specific data section to retrieve (options: general, geo, malware, urlList, passiveDns, whois)"
+            }
+        },
+        "required": [
+            "apiKey",
+            "domain",
+            "section"
+        ]
+    }
+},
+{
+    "name": "getIndicatorForHostname",
+    "description": "Retrieves detailed information for a specific hostname from the AlienVault database. This function provides various data types about the hostname. The 'general' section includes general information about the IP, geo data, and lists of other available sections. 'geo' provides detailed geographic data including country code and coordinates. The 'malware' section indicates malware samples associated with the hostname. 'urlList' shows URLs linked to the hostname, and 'passiveDns' details passive DNS information about hostnames/domains associated with the hostname.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "apiKey": {
+                "type": "string",
+                "description": "Your AlienVault API key"
+            },
+            "hostname": {
+                "type": "string",
+                "description": "Single hostname address to query"
+            },
+            "section":{
+                "type: "string",
+                "description" : "Specific data section to retrieve (options: general, geo, malware, urlList, passiveDns)"
+            }
+        },
+        "required": [
+            "apiKey",
+            "hostname",
+            "section"
+        ]
+    }
+},
+{
+    "name": "getIndicatorForFileHashes",
+    "description": "Retrieves information related to a specific file hash from the AlienVault database. This function provides two types of data: 'general', which includes general metadata about the file hash and a list of other available sections for the hash; and 'analysis', which encompasses both dynamic and static analysis of the file, including Cuckoo analysis, exiftool, etc.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "apiKey": {
+                "type": "string",
+                "description": "Your AlienVault API key"
+            },
+            "fileHash": {
+                "type": "string",
+                "description": "Single file hash to query"
+            },
+            "section":{
+                "type: "string",
+                "description" : "Specific data section to retrieve (options: general, analysis)"
+            }
+        },
+        "required": [
+            "apiKey",
+            "fileHash",
+            "section"
+        ]
+    }
+},
+{
+    "name": "getIndicatorForUrl",
+    "description": "Retrieves information related to a specific file hash from the AlienVault database. This function provides two types of data: 'general', which includes general metadata about the file hash and a list of other available sections for the hash; and 'analysis', which encompasses both dynamic and static analysis of the file, including Cuckoo analysis, exiftool, etc.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "apiKey": {
+                "type": "string",
+                "description": "Your AlienVault API key"
+            },
+            "url": {
+                "type": "string",
+                "description": "Single URL to query"
+            },
+            "section": {
+                "type: "string",
+                "description": "Specific data section to retrieve (options: general, url_list)"
+            }
+        },
+        "required": [
+            "apiKey",
+            "url",
+            "section"
+        ]
+    }
+},
+{
+    "name": "getIndicatorForCVE",
+    "description": "Retrieves information related to a specific CVE (Common Vulnerability Enumeration) from the AlienVault database. This function offers detailed data on CVEs. The 'General' section includes MITRE CVE data, such as CPEs (Common Platform Enumerations), CWEs (Common Weakness Enumerations), and other relevant details. It also provides information on any pulses this indicator is on, and lists other sections currently available for this CVE.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "apiKey": {
+                "type": "string",
+                "description": "Your AlienVault API key"
+            },
+            "cve": {
+                "type": "string",
+                "description": "Specific CVE identifier to query (e.g., 'CVE-2014-0160')"
+            },
+            "section": {
+                "type: "string",
+                "description": "Specific data section to retrieve ('general' only)"
+            }
+        },
+        "required": [
+            "apiKey",
+            "cve",
+            "section"
+        ]
+    }
+},
+{
+    "name": "getIndicatorForNIDS",
+    "description": "Retrieves metadata information for a specific Network Intrusion Detection System (NIDS) indicator from the AlienVault database. This function is designed to provide general metadata about NIDS indicators.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "apiKey": {
+                "type": "string",
+                "description": "Your AlienVault API key"
+            },
+            "nids": {
+                "type": "string",
+                "description": "Specific NIDS indicator to query (e.g., '2820184')"
+            },
+            "section": {
+                "type: "string","description": "Specific data section to retrieve ('general' only)"
+            }
+        },
+        "required": [
+            "apiKey",
+            "nids",
+            "section"
+        ]
+    }
+},
+{
+    "name": "getIndicatorForCorrelationRules",
+    "description": "Retrieves metadata information related to a specific Correlation Rule from the AlienVault database. This function is designed to provide general metadata about Correlation Rules used in network security and event correlation. Correlation Rules are crucial for identifying patterns and potential security threats in network data.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "apiKey": {
+                "type": "string",
+                "description": "Your AlienVault API key"
+            },
+            "correlationRule": {
+                "type": "string",
+                "description": "Specific Correlation Rule identifier to query (e.g., '572f8c3c540c6f0161677877')"
+            },
+            "section": {
+                "type: "string","description": "Specific data section to retrieve ('general' only)"
+            }
+        },
+        "required": [
+            "apiKey",
+            "correlationRule",
+            "section"
+        ]
+    }
+}

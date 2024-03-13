@@ -47,7 +47,7 @@ python convert_weights.py --model_path {ENTER MODEL PATH} --adapter_path {ENTER 
 ## Inference
 For Inference the model has to be merged with the lora adapaters that are saved from the finetuning process. 
 
-inference prompt has to be set up in the following format:(replace the function names , description , parameters as per your use case. You can choose to add multiple functions as well. Refer to a sample prompt below or check this eval prompt. ([eval_prompt](custom_function.txt)). You have to parse the output and call the function and append the response into the prompt for the final answer. The model's response will always stop with the <|endoftext|> token (use this during inference to stop generation for multi  turn inference/function calling)
+inference prompt has to be set up in the following format:(replace the function names , description , parameters as per your use case. You can choose to add multiple functions as well. Refer to a sample prompt below or check this eval prompt. ([eval_prompt](custom_function.txt)). You have to parse the output and call the function and append the response into the prompt and let the model generate the final answer. The model's response will always stop with the <|endoftext|> token (use this during inference to stop generation for multiturn inference/function calling)
 ```
 SYSTEM: You are a helpful assistant with access to the following functions. Use them if required -
 {

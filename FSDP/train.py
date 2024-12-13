@@ -209,7 +209,7 @@ if __name__ == "__main__":
     torch.cuda.set_device(local_rank)
     dist.init_process_group("nccl", rank=local_rank, world_size=world_size)
 
-    model_name = "/data/projects/11003644/srini/models/Mistral-7B-v0.1"
+    model_name = "./models/Mistral-7B-v0.1"
     scheduler_type = "cosine"
     seed = 42
     transformers.set_seed(42)

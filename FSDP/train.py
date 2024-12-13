@@ -258,8 +258,6 @@ if __name__ == "__main__":
     optimizer = get_optimizer(model , lr , weight_decay)
 
     train_ds = "glaiveai/glaive-function-calling-v2"
-    #"/home/project/11003644/srini/full_finetuning/mimic_data/train_data_with_table_query_show_tables.json"
-    #dataset = datasets.load_dataset("json" , data_files=train_ds , split="train")
     dataset = datasets.load_dataset(train_ds, split="train")
     main_dataset = dataset.train_test_split(test_size=0.05 , seed=seed)
 
